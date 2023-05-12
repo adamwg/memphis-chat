@@ -10,6 +10,8 @@ $ go build .
 
 ## Running
 
+First, create a station called `memphis-chat` on your Memphis server. Then, run the following:
+
 ```console
 $ export MEMPHIS_ADDR=<your memphis server>
 $ export MEMPHIS_USER=<your memphis username>

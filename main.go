@@ -56,7 +56,7 @@ func main() {
 	defer conn.Close()
 
 	producerName := fmt.Sprintf("chat-%s", *username)
-	producer, err := conn.CreateProducer("awg-test-station", producerName)
+	producer, err := conn.CreateProducer("memphis-chat", producerName)
 	if err != nil {
 		log.Fatalf("creating producer %q: %v", producerName, err)
 	}
@@ -101,7 +101,7 @@ func main() {
 	}
 
 	consumer, err := conn.CreateConsumer(
-		"awg-test-station",
+		"memphis-chat",
 		producerName,
 		memphis.PullInterval(100*time.Millisecond),
 	)
