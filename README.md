@@ -18,3 +18,7 @@ $ export MEMPHIS_USER=<your memphis username>
 $ export MEMPHIS_PASSWORD=<your memphis password>
 $ ./memphis-chat -username=<chat username>
 ```
+
+## Quitting
+
+Press Ctrl+C to exit.
